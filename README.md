@@ -1,2 +1,3 @@
 # Durak
-Durak game with bots
+
+## Durak game with bots!
