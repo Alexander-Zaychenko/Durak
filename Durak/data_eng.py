@@ -1,8 +1,4 @@
-from random import shuffle
-from typing import List, Tuple, AnyStr
-
-def create_deck_of_cards() -> List[Tuple[AnyStr, AnyStr]]:
-    deck_of_cards = [
+deck_of_cards = [
 # heart
         ('6', 'heart'),
         ('7', 'heart'),
@@ -44,22 +40,3 @@ def create_deck_of_cards() -> List[Tuple[AnyStr, AnyStr]]:
         ('K', 'spade'),
         ('A', 'spade'),
     ]
-    shuffle(deck_of_cards)
-    return deck_of_cards
-
-
-def give_cards_to_player(deck_of_cards: List[Tuple[AnyStr, AnyStr]]) -> List[Tuple[AnyStr, AnyStr]]:
-    return deck_of_cards[0:6]
-
-
-def join_cards(cards: List[Tuple[AnyStr, AnyStr]]) -> List[Tuple[AnyStr, AnyStr]]:
-    pretty_cards = ''
-    for card in cards:
-        pretty_cards += ' '.join(card)
-        pretty_cards += ', '
-    return pretty_cards
-
-
-def main() -> None:
-    deck_of_cards = create_deck_of_cards()
-    player_cards = join_cards(give_cards_to_player(deck_of_cards))

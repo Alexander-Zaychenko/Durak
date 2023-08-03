@@ -1,0 +1,2 @@
+from data_eng import deck_of_cards
+from data_rus import deck_of_cards
